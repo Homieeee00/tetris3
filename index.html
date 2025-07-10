@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tetris Completo</title>
+  <link rel="stylesheet" href="tetris.css" />
+</head>
+<body>
+  <h1>Tetris</h1>
+  <div class="game-container">
+    <div id="tetris-grid"></div>
+    <div class="info">
+      <p>Puntaje: <span id="score">0</span></p>
+      <button onclick="startGame()">Reiniciar</button>
+    </div>
+  </div>
+
+<audio id="musicaFondo" loop>
+  <source src="Cancion de Tetris Original.m4a" type="audio/mp4">
+</audio>
+
+
+
+  <script src="tetris.js"></script>
+
+</body>
+</html>
+

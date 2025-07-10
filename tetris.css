@@ -1,0 +1,71 @@
+body {
+  font-family: sans-serif;
+  background: #111;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tetris-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(20, 30px);
+  gap: 1px;
+  background: #222;
+  touch-action: none; /* Para que touch funcione bien en móviles */
+}
+
+#tetris-grid div {
+  width: 30px;
+  height: 30px;
+  background: #333;
+  box-sizing: border-box;
+}
+
+.tetromino {
+  background-color: rgb(130, 236, 98);
+  border: 1px solid rgb(101, 219, 140);
+  box-sizing: border-box;
+}
+
+.taken {
+  background-color: #555;
+  box-sizing: border-box;
+}
+
+.info {
+  margin-top: 15px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #00f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0055ff;
+}
+
+@media (max-width: 600px) {
+  #tetris-grid {
+    transform: scale(0.9);
+  }
+}
